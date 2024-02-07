@@ -44,3 +44,37 @@ double area = ta.getDouble(0.0);
 ```
 
 </details>
+
+## Puts the information onto smart dashboard.
+<details>
+<summary>Puts the information onto smart dashboard</summary>
+
+This will put the information onto smart dashboard as number.
+
+```java
+//post to smart dashboard periodically
+SmartDashboard.putNumber(“LimelightX”, x);
+SmartDashboard.putNumber(“LimelightY”, y);
+Smartdashboard.putNumber(“LimelightArea”, area);
+```
+
+</details>
+
+> [!NOTE]
+> This next stuff is only for if everything else so far is done.
+
+# Complete NetworkTables API
+
+<details>
+<summary>Basic Targeting Data</summary>
+
+## Basic Targeting Data
+Use the following code:
+```java
+NetworkTableInstance.getDefault().getTable(“limelight”).getEntry(“<variablename>”).getDouble(0);
+```
+
+| key | Description |
+| — | — |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven’t been staged |
